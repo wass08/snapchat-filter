@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snapchat Filter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="items-picker">
+      <div class="item-picker">
+        <i class="fas fa-chevron-left item-picker-left" onclick="prevItemForType('hat')"></i>
+        <div class="item-picker-type">
+          <i class="fas fa-hat-cowboy-side item-picker-type-icon"></i>
+          <span class="item-picker-type-title">Hat</span>
+        </div>
+        <i class="fas fa-chevron-right item-picker-right" onclick="nextItemForType('hat')"></i>
+      </div>
+      <div class="item-picker">
+        <i class="fas fa-chevron-left item-picker-left" onclick="prevItemForType('glasses')"></i>
+        <div class="item-picker-type">
+          <i class="fas fa-glasses item-picker-type-icon"></i>
+          <span class="item-picker-type-title">Glasses</span>
+        </div>
+        <i class="fas fa-chevron-right item-picker-right" onclick="nextItemForType('glasses')"></i>
+      </div>
+      <div class="item-picker">
+        <i class="fas fa-chevron-left item-picker-left" onclick="prevItemForType('mouth')"></i>
+        <div class="item-picker-type">
+          <i class="fas fa-teeth item-picker-type-icon"></i>
+          <span class="item-picker-type-title">Mouth</span>
+        </div>
+        <i class="fas fa-chevron-right item-picker-right" onclick="nextItemForType('mouth')"></i>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clmtrackr@1.1.2/build/clmtrackr.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
